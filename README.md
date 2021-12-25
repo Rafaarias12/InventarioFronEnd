@@ -1,0 +1,2 @@
+# InventarioFronEnd
+ Vista del Inventario
