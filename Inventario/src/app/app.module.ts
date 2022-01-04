@@ -7,8 +7,8 @@ import { SesionComponent } from './sesion/sesion.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { EquiposComponent } from './equipos/equipos.component';
 import { HomeComponent } from './home/home.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
@@ -16,6 +16,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
+
+import { AuthGuards } from './security/auth.guard';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +40,7 @@ import { MatButtonModule } from '@angular/material/button';
     HttpClientModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

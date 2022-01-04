@@ -41,6 +41,12 @@ export class AuthServicesService {
       })
     );
   }
+
+  logout(){
+    localStorage.removeItem('user');
+    this.usuarioSubject.next(null!);
+  }
+
 }
 
 

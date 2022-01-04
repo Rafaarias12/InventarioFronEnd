@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EquipoServiceService } from '../servicio/equipo-service.service';
 
 @Component({
   selector: 'app-equipos',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EquiposComponent implements OnInit {
 
-  constructor() { }
+  public lst: any[] | undefined;
+  constructor(private apiEquipo: EquipoServiceService) { 
+    
+  }
+
 
   ngOnInit(): void {
+    this.getEquipo();
+  }
+
+  getEquipo(){
+    this.apiEquipo.getEquipo().subscribe(response =>{
+      this.lst = response.data;
+    });
   }
 
 }
