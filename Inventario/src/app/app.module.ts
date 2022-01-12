@@ -12,12 +12,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
-import { MatTableModule } from '@angular/material/table';
+
 import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
-
-import { AuthGuards } from './security/auth.guard';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
@@ -35,10 +36,12 @@ import { AuthGuards } from './security/auth.guard';
     MatSidenavModule,
     MatCardModule,
     FormsModule,
-    MatTableModule,
     MatInputModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    MatTableModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]

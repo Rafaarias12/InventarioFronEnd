@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EquipoServiceService } from '../servicio/equipo-service.service';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-equipos',
@@ -8,7 +9,12 @@ import { EquipoServiceService } from '../servicio/equipo-service.service';
 })
 export class EquiposComponent implements OnInit {
 
-  public lst: any[] | undefined;
+  public lst: any[] = [];
+
+  public columnas: string[] = ['Host', 'TipoEquipo', 'Usuario', 'Marca', 'Modelo', 'Serial', 'Procesador',
+  'Memoria','TipoMemoria', 'Disco', 'TipoDisco', 'Teclado', 'Mouse', 'SO', 'Ip'
+];
+  
   constructor(private apiEquipo: EquipoServiceService) { 
     
   }
