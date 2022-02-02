@@ -19,6 +19,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavComponent } from './nav/nav.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { MatTableModule } from '@angular/material/table';
     SesionComponent,
     UsuariosComponent,
     EquiposComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

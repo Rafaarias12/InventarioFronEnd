@@ -13,3 +13,30 @@ table{
   .demo-button + .demo-button {
     margin-left: 8px;
   }
+
+ header{
+   background-color:#5A8B63;
+   //height: 7%;
+ }
+
+nav{
+  background-color: #777D78;
+  height: 93%;
+    position: relative;
+    width: 15%;
+}
+
+footer{
+  background-color: black;
+  position: absolute;
+  top: 94.6%;
+  width: 100%;
+}
+
+main{
+  width: 81%;
+  left: 17%;
+  position: absolute;
+  top: 12%;
+}
+
