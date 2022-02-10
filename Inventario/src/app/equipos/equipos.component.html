@@ -41,51 +41,6 @@
                     <td mat-cell *matCellDef="let element">{{element.serial}}</td>
                 </ng-container>
         
-                <ng-container matColumnDef = "Procesador">
-                    <th mat-header-cell *matHeaderCellDef> Procesador </th>
-                    <td mat-cell *matCellDef="let element">{{element.procesador}}</td>
-                </ng-container>
-        
-                <ng-container matColumnDef = "Memoria">
-                    <th mat-header-cell *matHeaderCellDef> Memoria </th>
-                    <td mat-cell *matCellDef="let element">{{element.memoria}}</td>
-                </ng-container>
-        
-                <ng-container matColumnDef = "TipoMemoria">
-                    <th mat-header-cell *matHeaderCellDef> Tipo Memoria </th>
-                    <td mat-cell *matCellDef="let element">{{element.tipoMemoria}}</td>
-                </ng-container>
-        
-                <ng-container matColumnDef = "Disco">
-                    <th mat-header-cell *matHeaderCellDef> Disco </th>
-                    <td mat-cell *matCellDef="let element">{{element.disco}}</td>
-                </ng-container>
-        
-                <ng-container matColumnDef = "TipoDisco">
-                    <th mat-header-cell *matHeaderCellDef> Tipo </th>
-                    <td mat-cell *matCellDef="let element">{{element.tipoDisco}}</td>
-                </ng-container>
-        
-                <ng-container matColumnDef = "Teclado">
-                    <th mat-header-cell *matHeaderCellDef> Teclado </th>
-                    <td mat-cell *matCellDef="let element">{{element.teclado}}</td>
-                </ng-container>
-        
-                <ng-container matColumnDef = "Mouse">
-                    <th mat-header-cell *matHeaderCellDef> Mouse </th>
-                    <td mat-cell *matCellDef="let element">{{element.mouse}}</td>
-                </ng-container>
-        
-                <ng-container matColumnDef = "SO">
-                    <th mat-header-cell *matHeaderCellDef> SO </th>
-                    <td mat-cell *matCellDef="let element">{{element.so}}</td>
-                </ng-container>
-        
-                <ng-container matColumnDef = "Ip">
-                    <th mat-header-cell *matHeaderCellDef> Ip </th>
-                    <td mat-cell *matCellDef="let element">{{element.Ip}}</td>
-                </ng-container>
-        
                 <tr mat-header-row *matHeaderRowDef="columnas"></tr>
                 <tr mat-row *matRowDef="let row; columns: columnas"></tr>
         

@@ -11,9 +11,7 @@ export class EquiposComponent implements OnInit {
 
   public lst: any[] = [];
 
-  public columnas: string[] = ['Host', 'TipoEquipo', 'Usuario', 'Marca', 'Modelo', 'Serial', 'Procesador',
-  'Memoria','TipoMemoria', 'Disco', 'TipoDisco', 'Teclado', 'Mouse', 'SO', 'Ip'
-];
+  public columnas: string[] = ['Host', 'TipoEquipo', 'Usuario', 'Marca', 'Modelo'];
   
   constructor(private apiEquipo: EquipoServiceService) { 
     

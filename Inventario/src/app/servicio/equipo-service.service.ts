@@ -8,7 +8,7 @@ import { Response } from '../models/Response';
 })
 export class EquipoServiceService {
 
-  url: string = 'https://localhost:44337/api/equipo';
+  url: string = 'https://localhost:44337/api/EquiposGet';
 
   constructor(private _http: HttpClient) { }
 
